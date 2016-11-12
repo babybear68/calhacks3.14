@@ -1,5 +1,5 @@
 class Event:
-    def __init__(self, host, title, type, time, location, description, num_limit, need_approval = False, necessary = None, exclude = None, extra_options = [] ,participants = []):
+    def __init__(self, host, title, type, time, location, description, num_limit, need_approval = False, necessary = {}, exclude = {}, extra_options = {} ,participants = []):
         self.host = host # User
         self.title = title #String
         self.type = type #Label
@@ -8,9 +8,9 @@ class Event:
         self.description = description #String
         self.number_limit = num_limit # Tuple
         self.need_approval = need_approval #Bool
-        self.necessary = necessary #[Label]
-        self.exclude = exclude #[Label]
-        self.extra_options = extra_options #[Label]
+        self.necessary = necessary #{Label}
+        self.exclude = exclude #{Label}
+        self.extra_options = extra_options #{Label}
         self.participants = participants  # [User]
 
 
