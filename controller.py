@@ -16,7 +16,14 @@ class Controller:
         scores = []
         for event in events:
             scores.append([event, Calculator.calculate(event, user)])
-            scores.sort(key=lambdax: x[1])
-            scores.reverse()
+        scores.sort(key=lambdax: x[1])
+        scores.reverse()
         #display in order!
-    def
+    def sort_certain_type(user, Type):
+        scores = []
+        for event in events:
+            if isinstance(events.type, Type):
+                scores.append([event, Calculator.calculate(event, user)])
+        scores.sort(key=lambdax: x[1])
+        scores.reverse()
+        #display in order!
