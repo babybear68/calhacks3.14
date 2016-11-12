@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create New Event</title>
+</head>
+
+<body>
+<h1>Create New Event</h1>
+<form id="form1" name="form1" method="post">
+  <p>
+    <label for="textfield">Event Name:</label>
+    <input type="text" name="name" id="textfield">
+  </p>
+  <p>Event Type
+    <label for="select">:</label>
+    <select name="type" id="select">
+      <option value="pe" selected>Public Events</option>
+      <option value="ac">Art &amp; Creativity</option>
+      <option value="fd">Food</option>
+      <option value="sg">Sports &amp; Games</option>
+      <option value="to">Trips &amp; Outdoors</option>
+      <option value="tc">Technology</option>
+      <option value="sf">Shopping &amp; Film</option>
+    </select>
+  </p>
+  <p>
+    <label for="datetime">Date &amp; Time:</label>
+    <input type="datetime" name="datetime" id="datetime">
+  </p>
+  <p>
+    <label for="number">Participants Number Restriction:</label>
+    <input type="number" name="number" id="number">
+  </p>
+  <p>
+    <input type="submit" name="submit" id="submit" value="Submit">
+    <input type="reset" name="reset" id="reset" value="Reset">
+  </p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
