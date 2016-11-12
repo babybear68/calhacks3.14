@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
 from flask import render_template
+import sqlite3
 
 app = Flask(__name__)
 
@@ -18,6 +19,12 @@ def create_user_post():
 		sex = 'Female'
 	year = request.form['year']
 	major = request.form['major']
+	st = 'INSERT INTO users VALUES("' + name + '", '+ str(age) + ', "' + sex + '", ' + str(year) + ', "' + major + '")'
+
+	with sqlite3.connect("users.db") as connection:
+		c = connection.cursor()
+		c.execute(st)
+
 	return 'User ' + name + ' created successfully!'
 
 if __name__ == '__main__':
