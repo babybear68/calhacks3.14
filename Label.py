@@ -3,6 +3,7 @@ class Label:
 
 class Sport(Label):
     levels = {'low':1/3, 'medium':2/3, 'high':1}
+    default_level = 0
     name = 'sport'
 
 

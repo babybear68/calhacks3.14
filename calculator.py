@@ -1,10 +1,16 @@
 class Calculator:
+    def get_value(user, key):
+        if key in user.labels:
+            return user.labels[key].value
+        else:
+            return 0
+
     def calculate(event, user):
-        score = 0
-        for key in event.weights:
-            if type(user.label_dic[key]) is type(event.label):
-                score += event.weights[key] * abs(event.label.value - user.label.value)
+        score = 1
+        for key in event.type.weights:
+            if key == event.type.name:
+                score -= event.type.weights[key] * abs(event.type.value - Calculator.get_value(user,key))
             else:
-                score += event.weights[key] * abs(event.host.label.value - user.label.value)
+                score -= event.type.weights[key] * abs(Calculator.get_value(event.host, key) - Calculator.get_value(user,key))
         return score
-            
+
