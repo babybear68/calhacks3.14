@@ -6,9 +6,8 @@ class Sport(Label):
     default_level = 0
     name = 'sport'
 
-    def __init__(self, level = 'low'):
-        self.value = self.levels[level]
-
+    def get_value(level):
+        return Sport.levels[level]
 
 class Basketball(Sport):
     name = 'basketball'

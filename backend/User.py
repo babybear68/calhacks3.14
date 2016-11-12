@@ -10,6 +10,16 @@ class User:
         self.contact = contact #string
         self.labels = {}
 
+    def user_from_sql(self,id):
+        st  = 'sql id'
+        #find the data of a user according to one's id
+
+        with sqlite3.connect("users.db") as connection:
+            c = connection.cursor()
+            arguments = c.execute(st)
+
+        return self.__init__()
+
 '''
         self.go_events = []
         self.create_events = []

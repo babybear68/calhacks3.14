@@ -2,7 +2,7 @@ class Event:
     def __init__(self, host, title, type, time, location, description, num_limit, need_approval = False, necessary = {}, exclude = {}, extra_options = {} ,participants = []):
         self.host = host # User
         self.title = title #String
-        self.type = type #Label
+        self.type = type #Tuple(String, float)
         self.time = time #??
         self.location = location #String
         self.description = description #String
