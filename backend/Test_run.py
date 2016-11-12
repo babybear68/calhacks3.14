@@ -1,6 +1,6 @@
-from user import *
+from User import *
 from Label import *
-from calculator import *
+from Calculator import *
 from Event import *
 
 user1 = User('u1','Freshman', 18, 'male', )
