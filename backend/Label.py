@@ -12,17 +12,17 @@ class Sport(Label):
 
 class Basketball(Sport):
     name = 'basketball'
-    weights = {'basketball':0.7, 'football':0.1, 'Soccer':0.1, 'Tennis':0.1}
+    weights = {'basketball':0.7, 'football':0.1, 'soccer':0.1, 'tennis':0.1}
 
 
 class Football(Sport):
     name = 'football'
-    weights = {'football':0.7, 'basketball':0.1, 'Soccer':0.1, 'Tennis':0.1}
+    weights = {'football':0.7, 'basketball':0.1, 'soccer':0.1, 'tennis':0.1}
 
 class Soccer(Sport):
     name = 'soccer'
-    weights = {'soccer':0.7, 'football':0.1, 'basketball':0.1, 'Tennis':0.1}
+    weights = {'soccer':0.7, 'football':0.1, 'basketball':0.1, 'tennis':0.1}
 
 class Tennis(Sport):
     name = 'tennis'
-    weights = {'tennis':0.7, 'football':0.1, 'Soccer':0.1, 'basketball':0.1}
+    weights = {'tennis':0.7, 'football':0.1, 'soccer':0.1, 'basketball':0.1}

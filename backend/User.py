@@ -1,5 +1,5 @@
 class User:
-    def __init__(self, name, year, age, gender, major=[], interest=[], personality=[], contact=None, labels = {}):
+    def __init__(self, name, year, age, gender, major=[], interest=[], personality=[], contact=None):
         self.name = name #string
         self.year = year #string
         self.age = age #int
@@ -8,7 +8,7 @@ class User:
         self.interest = interest #list of string
         self.personality = personality #list of string
         self.contact = contact #string
-        self.labels = labels #{Label}
+        self.labels = {}
 
 '''
         self.go_events = []
