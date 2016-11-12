@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create New User</title>
+</head>
+
+<body>
+<h1>Create New User</h1>
+<form id="form1" name="form1" method="post">
+  <p>
+    <label for="textfield">Name:</label>
+    <input type="text" name="name" id="textfield">
+  </p>
+  <p>Sex: </p>
+  <table width="200">
+    <tr>
+      <td><label>
+        <input type="radio" name="sex" value="m" id="sex_0">
+        Man</label></td>
+    </tr>
+    <tr>
+      <td><label>
+        <input type="radio" name="sex" value="f" id="sex_1">
+        Woman</label></td>
+    </tr>
+  </table>
+  <p>
+    <label for="number">Age:</label>
+    <input type="number" name="age" id="number">
+  </p>
+  <p>Year:  </p>
+  <table width="200">
+    <tr>
+      <td><label>
+        <input type="radio" name="year" value="1" id="year_0">
+        Freshman</label></td>
+    </tr>
+    <tr>
+      <td><label>
+        <input type="radio" name="year" value="2" id="year_1">
+        Sophomore</label></td>
+    </tr>
+    <tr>
+      <td><label>
+        <input type="radio" name="year" value="3" id="year_2">
+        Junior</label></td>
+    </tr>
+    <tr>
+      <td><label>
+        <input type="radio" name="year" value="4" id="year_3">
+        Senior</label></td>
+    </tr>
+  </table>
+  <p>
+    <label for="select">Major:</label>
+    <select name="major" id="select" form="form1">
+      <option value="eecs">EECS</option>
+      <option value="ieor">IEOR</option>
+    </select>
+  </p>
+  <p>
+    <input type="submit" name="submit" id="submit" value="Submit">
+    <input type="reset" name="reset" id="reset" value="Reset">
+  </p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
