@@ -119,6 +119,3 @@ def create_dict(list):
         print (" {0}.name: {0}.weights, {1}.name: {1}.weights,{2}.name: {2}.weights,{3}.name: {3}.weights".format(list[i%4],list[(i+1)%4],list[(i+2)%4],list[(i+3)%4]))
 
 
-
-
-create_dict(['Concert','Exhibition','Game','Talk'])
