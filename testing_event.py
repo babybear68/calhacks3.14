@@ -15,6 +15,6 @@ event14 = Event(user14, "Intro to soccer", ("soccer", 1/3), "Nov 20 4:00 pm", "A
 event15 = Event(user15, "New to Football", ("football", 2/3), "Nov 13 3:30 pm", "Memorial Glade", "look for group football practicing", (3,9), True)
 event16 = Event(user16, "Have fun and Tennis!", ("tennis", 2/3), "Nov 20 9:30 am", "Southside tennis court", "I have reserved a court for practice. Come and join me and let's split the cost.", (2, 4), False)
 event17 = Event(user17, "Production by BerkeleyStage", ("concert", 2/3), "Nov 12 7:30 pm", "BerkeleyStage is the most famous theatre group at Berkeley. They have been practicing for months for this play. Come and it will be a good time. ", (2, 2), True)
-event18 = Event(user18, "The Big Game",("game",1/3),"Nov 19 7:00 pm","California Memorial Stadium","Go Bears!!",(5,15),False))
+event18 = Event(user18, "The Big Game",("game",1/3),"Nov 19 7:00 pm","California Memorial Stadium","Go Bears!!",(5,15),False)
 event19 = Event(user19, "Google Lightning Talk", ("talk", 2/3), "Nov 14 6:00 pm", "Soda Hall", "I am a fanatic fan of tech. If you recognize my passion, let's go to the talk together and get to know each other. Dinner is provided.", (2, 2), False)
 event20 = Event(user20, "Modern Art Exhibition at Berkeley Museum", ("exhibit", 1/3), "Nov 20 9:00 am", "Berkeley Museum", "Modern art is the best.", (2, 4), False)
