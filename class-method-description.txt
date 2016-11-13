@@ -1,0 +1,14 @@
+Class Label -> 
+	levels ->Dictionary (String: Float)
+	weights -> Dictionary (String: Float)
+	name -> String
+	
+	get_level(level(String)) -> return float
+
+Class person->
+	…
+	labels -> Dictionary (String : Float)
+
+Class Event->
+	…
+	labels -> Dictionary (String : Float)
