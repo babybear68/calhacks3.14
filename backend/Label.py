@@ -64,6 +64,9 @@ class ArtAndCreativity:
     name = 'art_and_creativity'
     default_level = 0
 
+    def get_value(level):
+        return ArtAndCreativity.levels[level]
+
 class Music(ArtAndCreativity):
     name = 'music'
     weights =  {  'music':0.7,'reading_and_writing':0.1,'painting':0.1,'poetry':0.1  }
@@ -86,6 +89,9 @@ class Food:
     levels = {'so-so':1/3, 'like':2/3, 'favorite':1}
     name = 'food'
     default_level = 0
+
+    def get_value(level):
+        return Food.levels[level]
 
 class American(Food):
     name = 'american'
